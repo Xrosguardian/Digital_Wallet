@@ -52,11 +52,10 @@ st.markdown("""
 
 def load_users():
     try:
-        users_df = pd.read_csv(USER_DATA)
+        users_df = pd.read_csv(USER_DATA).astype({'mobile': str})
         # Clean transaction data on load
         users_df['transactions'] = users_df['transactions'].fillna('')
         users_df['mobile'] = users_df['mobile'].astype(str)
-        users_df['normalized_mobile'] = users_df['mobile'].apply(normalize_mobile)
         return users_df
     except FileNotFoundError:
         return pd.DataFrame(columns=COLUMNS)
@@ -96,23 +95,25 @@ def auth_pages():
               username = st.text_input("Username")
               password = st.text_input("Password", type="password")
               submitted = st.form_submit_button("Create Account →")
-
+              
               if submitted:
                   users_df = load_users()
                   # Normalize mobile number before checking duplicates
                   mobile = normalize_mobile(mobile)
-
+                  
                   if any([not email, not mobile, not username, not password]):
                       st.error("All fields are required!")
                       return
-
-                  # Check duplicates using normalized mobile
-                  if (users_df['email'].eq(email).any() or
-                      users_df['normalized_mobile'].eq(mobile).any() or
-                      users_df['username'].eq(username).any()):
+                  
+                  # Check duplicates using original columns with normalization
+                  mobile_exists = users_df['mobile'].apply(normalize_mobile).eq(mobile).any()
+                  email_exists = users_df['email'].eq(email).any()
+                  username_exists = users_df['username'].eq(username).any()
+                  
+                  if any([email_exists, mobile_exists, username_exists]):
                       st.error("Email, mobile, or username already exists!")
                       return
-
+                        
                   new_user = pd.DataFrame([{
                       'username': username,
                       'password': password,
@@ -121,7 +122,7 @@ def auth_pages():
                       'balance': 0.0,
                       'transactions': ''
                   }])
-
+                  
                   users_df = pd.concat([users_df, new_user], ignore_index=True)
                   save_users(users_df)
                   st.markdown("<div class='success-message'>🎉 Account created successfully! Please login</div>", unsafe_allow_html=True)
