@@ -454,14 +454,15 @@ def dashboard():
             note = st.text_input("Add Note (Optional)")
             if st.form_submit_button("💸 Send Now"):
                 users_df = load_users()
-
-                # Normalize mobile number input
+                
+                # Normalize input and existing mobile numbers
                 normalized_recipient = normalize_mobile(recipient)
-
-                # Search using normalized numbers
+                users_df['mobile'] = users_df['mobile'].apply(normalize_mobile)
+                
+                # Find recipient using normalized numbers
                 recipient_user = users_df[
-                    (users_df['email'] == normalized_recipient) |
-                    (users_df['normalized_mobile'] == normalized_recipient)
+                    (users_df['email'] == normalized_recipient) | 
+                    (users_df['mobile'] == normalized_recipient)
                 ]
 
                 if recipient_user.empty:
