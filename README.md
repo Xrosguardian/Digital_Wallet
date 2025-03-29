@@ -69,6 +69,10 @@ Core Functionality:
     📜 History: Filterable transaction records
 
 ## 📸 Demo
+Video Demo:
+
+https://github.com/user-attachments/assets/539651dd-aafc-4a37-a426-59a173061070
+
 Application Screenshots:
 
 
