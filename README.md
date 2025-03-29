@@ -71,20 +71,13 @@ Core Functionality:
 ## 📸 Demo
 Application Screenshots:
 
-    ![image](https://github.com/user-attachments/assets/33d5e12f-1624-4163-a111-d8231dc1de78)
 
-    ![image](https://github.com/user-attachments/assets/d8bf731a-7982-46f5-9399-d9bee6e0988e)
-
-
-    ![image](https://github.com/user-attachments/assets/50928206-b882-45b4-a0f9-47bff212c6f6)
-
-    ![image](https://github.com/user-attachments/assets/f9d96b07-5003-4b7d-9024-020b3d3a84fa)
-
-      ![image](https://github.com/user-attachments/assets/0bab3be2-bbf9-426d-b08b-b62bdebd90ff)
-
-    
-    ![image](https://github.com/user-attachments/assets/15c0fb0b-f9c6-41d7-9a5a-9b4730923dec)
-
+![Screenshot 2025-03-29 132236](https://github.com/user-attachments/assets/96540353-8f51-40d3-a984-fd4ca81309e4)
+![Screenshot 2025-03-29 132202](https://github.com/user-attachments/assets/1fbb2186-06e0-4091-a051-16e8a70496ee)
+![Screenshot 2025-03-29 130859](https://github.com/user-attachments/assets/88f7c299-7011-4359-a6c2-1b2f907a962a)
+![Screenshot 2025-03-29 130753](https://github.com/user-attachments/assets/52dcf4bc-e98c-4077-98e9-6d81a11ab341)
+![Screenshot 2025-03-29 125139](https://github.com/user-attachments/assets/e32fab0d-7c16-4ae1-a987-8f52eb3ee715)
+![Screenshot 2025-03-29 132300](https://github.com/user-attachments/assets/a06ce85d-ba46-46a6-b7f3-9355f27dccf6)
 
 
 ## 📚 Technologies Used
