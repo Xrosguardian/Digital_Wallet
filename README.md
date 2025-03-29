@@ -47,7 +47,7 @@ Live Demo:
 Streamlit App
 https://digitalwallet-af3005.streamlit.app/
 
-##🛠️ Features
+## 🛠️ Features
 Core Functionality:
 
     🔐 Authentication: Secure login/signup system
