@@ -72,10 +72,12 @@ Application Screenshots:
 
     ![image](https://github.com/user-attachments/assets/33d5e12f-1624-4163-a111-d8231dc1de78)
 
-    Authentication Screen
+    ![image](https://github.com/user-attachments/assets/d8bf731a-7982-46f5-9399-d9bee6e0988e)
 
-    Dashboard Overview
-    Dashboard View
+
+    ![image](https://github.com/user-attachments/assets/50928206-b882-45b4-a0f9-47bff212c6f6)
+
+    
 
     Financial Analytics
     Analytics View
