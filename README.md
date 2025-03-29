@@ -46,7 +46,8 @@ Live Demo:
 
 Streamlit App
 https://digitalwallet-af3005.streamlit.app/
-🛠️ Features
+
+##🛠️ Features
 Core Functionality:
 
     🔐 Authentication: Secure login/signup system
@@ -77,10 +78,13 @@ Application Screenshots:
 
     ![image](https://github.com/user-attachments/assets/50928206-b882-45b4-a0f9-47bff212c6f6)
 
-    
+    ![image](https://github.com/user-attachments/assets/f9d96b07-5003-4b7d-9024-020b3d3a84fa)
 
-    Financial Analytics
-    Analytics View
+      ![image](https://github.com/user-attachments/assets/0bab3be2-bbf9-426d-b08b-b62bdebd90ff)
+
+    
+    ![image](https://github.com/user-attachments/assets/15c0fb0b-f9c6-41d7-9a5a-9b4730923dec)
+
 
 
 ## 📚 Technologies Used
